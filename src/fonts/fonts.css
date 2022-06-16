@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'NeutralFace-Bold';
+    src: local('NeutralFace-Bold'),
+            url('./NeutralFace-Bold.woff') format('woff'),
+            url('./NeutralFace-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'NeutralFace';
+    src: local('NeutralFace'),
+            url('./NeutralFace.woff') format('woff'),
+            url('./NeutralFace.woff2') format('woff2');
+}
+
