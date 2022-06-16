@@ -1,0 +1,20 @@
+body {
+    background-color: #F2EFE4;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px red solid; */
+}
+
+#title-header {
+    font-family: 'NeutralFace-Bold', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 125px;
+    line-height: 125px;
+    margin: 25px 0 0 25px;
+}
+
