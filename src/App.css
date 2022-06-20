@@ -30,10 +30,12 @@ main {
     padding: 0px 100px 0px 100px !important;
     margin-top: 30px;
     /* border: red solid 3px; */
+    max-height: 450px !important;
 }
 
 section {
     max-width: 625px;
+    max-height: 450px;
     /* border: yellow solid 3px; */
 }
 
@@ -88,7 +90,13 @@ p {
     font-size: 20px !important;
 }
 
+/* Footer */
+
 footer {
     display: flex;
     justify-content: center;
+}
+
+.vh {
+    min-height: calc(100vh - 200px);
 }

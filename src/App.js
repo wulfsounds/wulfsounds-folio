@@ -5,7 +5,7 @@ import "./App.css";
 
 // Import Components
 import Header from "./components/Header";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 // Import Pages
 import Home from "./pages/Home";
@@ -28,7 +28,7 @@ function App() {
 						<Route path="/design" element={<Design />} />
 						<Route path="/develop" element={<Develop />} />
 					</Routes>
-					{/* <Footer /> */}
+					<Footer />
 				</Router>
 			</div>
 		</ChakraProvider>

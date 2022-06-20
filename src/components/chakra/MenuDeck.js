@@ -29,7 +29,7 @@ function MenuDeck() {
 				as={IconButton}
 				aria-label="Options"
 				icon={<HamburgerIcon />}
-				variant="outline">
+				>
 			</Button>
 			<Drawer placement={placement} onClose={onClose} isOpen={isOpen} size={size}>
 				<DrawerOverlay />

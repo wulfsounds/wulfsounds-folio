@@ -3,7 +3,7 @@ import ProfilePic from "../components/images/dev-profile.png"
 
 const Home = () => {
     return (
-        <main>
+        <main className="vh">
                 {/* image */}
                 <section>
                     <img src={ProfilePic} alt="profile pic" />
