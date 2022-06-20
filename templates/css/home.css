@@ -2,19 +2,60 @@ body {
     background-color: #F2EFE4;
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
     /* border: 3px red solid; */
 }
 
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 200px 0px 200px;
+    /* border: red solid 3px; */
+}
+
+section {
+    max-width: 510px;
+    /* border: yellow solid 3px; */
+}
+
 #title-header {
     font-family: 'NeutralFace-Bold', sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 125px;
+    font-size: 110px;
     line-height: 125px;
-    margin: 25px 0 0 25px;
+    margin: 10px 0 0 10px;
 }
 
+img {
+    width: 375px;
+    border-radius: 300px 300px 50px 50px;
+    outline: black 10px solid;
+    border: white 10px solid;
+}
+
+h2,
+h3 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h4 {
+    font-family: 'NeutralFace-Bold', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}

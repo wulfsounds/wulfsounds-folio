@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'NeutralFace-Bold';
+    src: local('NeutralFace-Bold'),
+            url('./fonts/NeutralFace-Bold.woff') format('woff'),
+            url('./fonts/NeutralFace-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'NeutralFace';
+    src: local('NeutralFace'),
+            url('./fonts/NeutralFace-Bold.woff') format('woff'),
+            url('./fonts/NeutralFace.woff2') format('woff2');
+}
+
+
+/* Home Page */
+body {
+    background-color: #F2EFE4 !important;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px red solid; */
+}
+
+main {
+    display: flex !important;
+    justify-content: space-around !important;
+    padding: 0px 100px 0px 100px !important;
+    margin-top: 30px;
+    /* border: red solid 3px; */
+}
+
+section {
+    max-width: 625px;
+    /* border: yellow solid 3px; */
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#title-header {
+    font-family: 'NeutralFace-Bold', sans-serif !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    font-size: 110px !important;
+    line-height: 125px !important;
+    margin: 10px 0 0 10px !important;
+    color: #000000;
+}
+
+img {
+    width: 450px;
+    border-radius: 300px 300px 50px 50px;
+    outline: #000000 10px solid !important;
+    border: #ffffff 5px solid !important;
+}
+
+h2,
+h3 {
+    font-family: neue-haas-grotesk-display, sans-serif !important;
+    font-weight: 900 !important;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 35px !important;
+}
+
+h3 {
+    font-size: 24px !important;
+}
+
+h4 {
+    font-family: 'NeutralFace-Bold', sans-serif !important;
+    font-weight: 500 !important;
+    font-style: normal;
+}
+
+p {
+    font-family: neue-haas-grotesk-display, sans-serif !important;
+    font-weight: 500 !important;
+    font-style: normal;
+    font-size: 20px !important;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
