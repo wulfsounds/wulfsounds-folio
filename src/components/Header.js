@@ -1,14 +1,25 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import { Heading } from '@chakra-ui/react'
+import { Link } from "react-router-dom";
+import {
+	Heading,
+	Drawer,
+	DrawerBody,
+	DrawerFooter,
+	DrawerHeader,
+	DrawerOverlay,
+	DrawerContent,
+	DrawerCloseButton,
+} from "@chakra-ui/react";
 
+import MenuDeck from "./chakra/MenuDeck"
 
 const Header = () => {
 	return (
 		<>
 			<header>
-                <Heading>DEV WULF</Heading>
-            </header>
+				<h1 id="title-header">DEV WULF</h1>
+                <MenuDeck />
+			</header>
 		</>
 	);
 };
