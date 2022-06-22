@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, Link } from "react";
 import {
 	Button,
 	Grid,
@@ -14,9 +14,11 @@ import {
 	MenuButton,
 	IconButton,
 	CloseButton,
+	Box,
 } from "@chakra-ui/react";
 import { MdSettings } from "react-icons/md";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import MenuItems from "./MenuItems";
 
 function MenuDeck() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
@@ -52,17 +54,16 @@ function MenuDeck() {
 				<DrawerOverlay />
 				<DrawerContent>
 					<DrawerBody className="drawer drawer-body">
-						<header>
+						<header className="menu-header">
 							<h1 className="menu">MENU</h1>
 							<DrawerCloseButton
 								className="closeBtn"
 								as={CloseIcon}
 							/>
 						</header>
-						<main>
-							<p className="menu-item">FOLIO</p>
-							<p className="menu-item">CONTACT</p>
-							<p className="menu-item">SOCIALS</p>
+						<main className="drawer-main">
+						{/* Accordion Menu */}
+							<MenuItems />
 						</main>
 					</DrawerBody>
 				</DrawerContent>

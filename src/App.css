@@ -24,7 +24,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     /* border: 3px red solid; */
 }
 
@@ -108,11 +108,19 @@ p {
     color: #F2EFE4 !important;
 }
 
-.drawer-head {
+.drawer-main {
     display: flex !important;
+    flex-direction: row !important;
     justify-content: space-between;
     align-items: center;
-    border: red 3px solid;
+    /* border: red 3px solid; */
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* border: #000000 solid 3px; */
 }
 
 .menu-item {
@@ -132,10 +140,35 @@ p {
 .btn {
     background-color: transparent !important;
     padding: 0px;
-    margin-right: 15px;
+    margin-right: 25px;
     /* outline: red solid 2px !important; */
 }
 
+.closeBtn {
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    width: 100em;
+    margin-top: 100px !important;
+    justify-content: space-around;
+    /* border: red solid 3px; */
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    font-family: neue-haas-grotesk-display, sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 30px;
+    color: #F2EFE4 !important;
+}
 
 /* Footer */
 
