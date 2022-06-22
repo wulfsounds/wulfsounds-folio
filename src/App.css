@@ -38,7 +38,7 @@ main {
 }
 
 section {
-    max-width: 625px;
+    width: 625px;
     max-height: 450px;
     /* border: yellow solid 3px; */
 }
@@ -94,7 +94,7 @@ p {
     font-size: 20px !important;
 }
 
-/* Menu */
+/* MenuDeck, MenuItems */
 .drawer {
     background-color: #755B83;
 
@@ -111,8 +111,9 @@ p {
 .drawer-main {
     display: flex !important;
     flex-direction: row !important;
-    justify-content: space-between;
+    justify-content: center !important;
     align-items: center;
+    padding: 0;
     /* border: red 3px solid; */
 }
 
@@ -123,6 +124,26 @@ p {
     /* border: #000000 solid 3px; */
 }
 
+.chakra-accordion {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50em;
+    flex-shrink: 0;
+    /* border: red 3px solid; */
+}
+
+.css-17mg6aq {
+    border: none;
+}
+
+.menu-section {
+    display: flex;
+    justify-content: center;
+    width: 75em !important;
+    margin-top: 100px;
+}
+
 .menu-item {
     font-family: 'NeutralFace-Bold', sans-serif !important;
     font-weight: 500 !important;
@@ -130,10 +151,6 @@ p {
     font-size: 40px !important;
     color: #F2EFE4 !important;
 }
-
-/* .drawer-body {
-
-} */
 
 /* Buttons */
 
@@ -164,11 +181,15 @@ li {
 }
 
 .link {
+    display: block;
+
     font-family: neue-haas-grotesk-display, sans-serif !important;
     font-weight: 500 !important;
     font-size: 30px;
     color: #F2EFE4 !important;
 }
+
+
 
 /* Footer */
 

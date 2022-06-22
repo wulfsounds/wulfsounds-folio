@@ -6,7 +6,7 @@ import {
 	AccordionButton,
 	AccordionPanel,
 	AccordionIcon,
-    Button,
+	Button,
 	Grid,
 	GridItem,
 	useDisclosure,
@@ -24,73 +24,72 @@ import {
 } from "@chakra-ui/react";
 
 const MenuItems = () => {
-    return (
-        <Accordion allowToggle>
-        {/* Folio */}
-        <AccordionItem>
-            <AccordionButton
-                as="h2"
-                className="menu-item"
-            >
-                <Box flex="1" textAlign="left">
-                    FOLIO
-                </Box>
-                {/* <AccordionIcon /> */}
-            </AccordionButton>
-            <AccordionPanel pb={4}>
-                {/* <Link className="link" to=""> */}
-                    DESIGN
-                {/* </Link> */}
-                {/* <Link className="link" to=""> */}
-                    DEVELOP
-                {/* </Link> */}
-            </AccordionPanel>
-        </AccordionItem>
-        {/* Contact */}
-        <AccordionItem>
-            <AccordionButton
-                as="h2"
-                className="menu-item"
-            >
-                <Box flex="1" textAlign="left">
-                    CONTACT
-                </Box>
-                {/* <AccordionIcon /> */}
-            </AccordionButton>
-            <AccordionPanel pb={4}>
-                {/* <Link className="link" to=""> */}
-                    EMAIL
-                {/* </Link> */}
-            </AccordionPanel>
-        </AccordionItem>
-        {/* Socials */}
-        <AccordionItem>
-            <AccordionButton
-                as="h2"
-                className="menu-item"
-            >
-                <Box flex="1" textAlign="left">
-                    SOCIALS
-                </Box>
-                {/* <AccordionIcon /> */}
-            </AccordionButton>
-            <AccordionPanel pb={4}>
-                {/* <Link className="link" to=""> */}
-                    LINKEDIN
-                {/* </Link> */}
-                {/* <Link className="link" to=""> */}
-                    INSTAGRAM
-                {/* </Link> */}
-                {/* <Link className="link" to=""> */}
-                    GITHUB
-                {/* </Link> */}
-                {/* <Link className="link" to=""> */}
-                    DRIBBBLE
-                {/* </Link> */}
-            </AccordionPanel>
-        </AccordionItem>
-        </Accordion>
-    )
-}
+	return (
+		<section className="menu-section">
+			<Accordion allowToggle>
+				{/* Folio */}
+				<AccordionItem>
+					<AccordionButton className="acc-btn">
+						<Box flex="1" textAlign="left">
+							<h2 className="menu-item">FOLIO{' '}</h2>
+						</Box>
+						{/* <AccordionIcon /> */}
+					</AccordionButton>
+					<AccordionPanel pb={4}>
+						<div className="menu-links">
+							<a className="link" href="/">
+								DESIGN
+							</a>
+							<a className="link" href="*">
+								DEVELOP
+							</a>
+						</div>
+					</AccordionPanel>
+				</AccordionItem>
+				{/* Contact */}
+				<AccordionItem>
+					<AccordionButton className="acc-btn">
+						<Box flex="1" textAlign="left">
+							<h2 className="menu-item">CONTACT</h2>
+						</Box>
+						{/* <AccordionIcon /> */}
+					</AccordionButton>
+					<AccordionPanel pb={4}>
+						<div className="menu-links">
+							<a className="link" href="*">
+								EMAIL
+							</a>
+						</div>
+					</AccordionPanel>
+				</AccordionItem>
+				{/* Socials */}
+				<AccordionItem>
+					<AccordionButton className="acc-btn">
+						<Box flex="1" textAlign="left">
+							<h2 className="menu-item">SOCIALS</h2>
+						</Box>
+						{/* <AccordionIcon /> */}
+					</AccordionButton>
+					<AccordionPanel pb={4}>
+						<div className="menu-links">
+							<a className="link" href="*">
+								LINKEDIN
+							</a>
+							<a className="link" href="*">
+								INSTAGRAM
+							</a>
+							<a className="link" href="*">
+								GITHUB
+							</a>
+							<a className="link" href="*">
+								DRIBBBLE
+							</a>
+						</div>
+					</AccordionPanel>
+				</AccordionItem>
+			</Accordion>
+		</section>
+	);
+};
 
 export default MenuItems;

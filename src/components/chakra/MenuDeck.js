@@ -62,7 +62,7 @@ function MenuDeck() {
 							/>
 						</header>
 						<main className="drawer-main">
-						{/* Accordion Menu */}
+							{/* Accordion Menu */}
 							<MenuItems />
 						</main>
 					</DrawerBody>
