@@ -133,6 +133,19 @@ p {
     /* border: red 3px solid; */
 }
 
+.css-1d0ox2v {
+    /* border: red 3px solid; */
+    color: #F2EFE4;
+    padding: 0px !important;
+    background-color: transparent !important;
+}
+
+.menu-links {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start;
+}
+
 .css-17mg6aq {
     border: none;
 }
@@ -144,12 +157,18 @@ p {
     margin-top: 100px;
 }
 
+.folio {
+    position: relative;
+    min-width: 185px;
+}
+
 .menu-item {
     font-family: 'NeutralFace-Bold', sans-serif !important;
     font-weight: 500 !important;
     font-style: normal !important;
     font-size: 40px !important;
     color: #F2EFE4 !important;
+    /* min-width: 250px; */
 }
 
 /* Buttons */

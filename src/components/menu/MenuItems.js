@@ -22,6 +22,8 @@ import {
 	CloseButton,
 	Box,
 } from "@chakra-ui/react";
+import Designer from "../folio/Designer";
+import Developer from "../folio/Developer";
 
 const MenuItems = () => {
 	return (
@@ -31,18 +33,13 @@ const MenuItems = () => {
 				<AccordionItem>
 					<AccordionButton className="acc-btn">
 						<Box flex="1" textAlign="left">
-							<h2 className="menu-item">FOLIO{' '}</h2>
+							<h2 className="menu-item folio" trigger="0">FOLIO </h2>
 						</Box>
-						{/* <AccordionIcon /> */}
 					</AccordionButton>
 					<AccordionPanel pb={4}>
 						<div className="menu-links">
-							<a className="link" href="/">
-								DESIGN
-							</a>
-							<a className="link" href="*">
-								DEVELOP
-							</a>
+							<Designer />
+							<Developer />
 						</div>
 					</AccordionPanel>
 				</AccordionItem>
@@ -52,7 +49,6 @@ const MenuItems = () => {
 						<Box flex="1" textAlign="left">
 							<h2 className="menu-item">CONTACT</h2>
 						</Box>
-						{/* <AccordionIcon /> */}
 					</AccordionButton>
 					<AccordionPanel pb={4}>
 						<div className="menu-links">
@@ -68,7 +64,6 @@ const MenuItems = () => {
 						<Box flex="1" textAlign="left">
 							<h2 className="menu-item">SOCIALS</h2>
 						</Box>
-						{/* <AccordionIcon /> */}
 					</AccordionButton>
 					<AccordionPanel pb={4}>
 						<div className="menu-links">

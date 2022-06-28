@@ -11,7 +11,7 @@ import {
 	DrawerCloseButton,
 } from "@chakra-ui/react";
 
-import MenuDeck from "./chakra/MenuDeck"
+import MenuDeck from "./menu/MenuDeck"
 
 const Header = () => {
 	return (

@@ -1,5 +1,10 @@
 import React, { useContext, Link } from "react";
 import {
+	Accordion,
+	AccordionItem,
+	AccordionButton,
+	AccordionPanel,
+	AccordionIcon,
 	Button,
 	Grid,
 	GridItem,
@@ -16,34 +21,23 @@ import {
 	CloseButton,
 	Box,
 } from "@chakra-ui/react";
-import { MdSettings } from "react-icons/md";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import MenuItems from "./MenuItems";
 
-function MenuDeck() {
+const Designer = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const [placement, setPlacement] = React.useState("bottom");
 	const [size, setSize] = React.useState("full");
-
 	return (
 		<>
 			<Button
 				className="btn"
 				onClick={onOpen}
-				as={HamburgerIcon}
 				aria-label="Options"
 				w={75}
 				h={75}
-				icon={
-					<HamburgerIcon
-						as={MdSettings}
-						w={100}
-						h={100}
-						color="red.500"
-					/>
-				}
 			>
-				<svg></svg>
+				<a className="link">
+					DESIGN
+				</a>
 			</Button>
 			<Drawer
 				placement={placement}
@@ -53,23 +47,16 @@ function MenuDeck() {
 			>
 				<DrawerOverlay />
 				<DrawerContent>
-					<DrawerBody className="drawer drawer-body">
-						<header className="menu-header">
-							<h1 className="menu">MENU</h1>
-							<DrawerCloseButton
-								className="closeBtn"
-								as={CloseIcon}
-							/>
-						</header>
+					<DrawerBody className="drawer drawer-body designer">
+						<h2>DESIGNER</h2>
 						<main className="drawer-main">
 							{/* Accordion Menu */}
-							<MenuItems />
 						</main>
 					</DrawerBody>
 				</DrawerContent>
 			</Drawer>
 		</>
 	);
-}
+};
 
-export default MenuDeck;
+export default Designer;

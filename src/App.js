@@ -1,5 +1,6 @@
 // Standard React Landing Design
-// import React from "react";
+import React from "react";
+// import {AnimatePresence, motion} from framer-motion/dist/framer-motion;
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -9,9 +10,7 @@ import Footer from "./components/Footer";
 
 // Import Pages
 import Home from "./pages/Home";
-// import Menu from "./pages/Menu";
-import Design from "./pages/Design";
-import Develop from "./pages/Develop";
+import Gateway from "./pages/Gateway"
 import { ChakraProvider } from "@chakra-ui/react";
 
 // Import React Packages
@@ -24,9 +23,7 @@ function App() {
 					<Header />
 					<Routes>
 						<Route path="/" element={<Home />} />
-						{/* <Route path="/menu" element={<Menu />} /> */}
-						<Route path="/design" element={<Design />} />
-						<Route path="/develop" element={<Develop />} />
+						<Route path="*" element={<Gateway />} />x
 					</Routes>
 					<Footer />
 				</Router>
