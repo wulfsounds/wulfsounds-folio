@@ -28,7 +28,7 @@ function MenuDeck() {
 	return (
 		<>
 			<Button
-				className="btn"
+				className="btn main"
 				onClick={onOpen}
 				as={HamburgerIcon}
 				aria-label="Options"
@@ -42,8 +42,7 @@ function MenuDeck() {
 						color="red.500"
 					/>
 				}
-			>
-			</Button>
+			></Button>
 			<Drawer
 				placement={placement}
 				onClose={onClose}
@@ -55,10 +54,6 @@ function MenuDeck() {
 					<DrawerBody className="drawer drawer-body">
 						<header className="menu-header">
 							<h1 className="menu">MENU</h1>
-							<DrawerCloseButton
-								className="closeBtn"
-								as={CloseIcon}
-							/>
 						</header>
 						<main className="drawer-main">
 							{/* Accordion Menu */}

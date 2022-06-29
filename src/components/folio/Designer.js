@@ -21,6 +21,9 @@ import {
 	CloseButton,
 	Box,
 } from "@chakra-ui/react";
+import { CloseIcon } from "@chakra-ui/icons";
+import MenuDeck from "../../components/menu/MenuDeck";
+import DNDY from "../images/DNDYlogo.png";
 
 const Designer = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
@@ -28,16 +31,8 @@ const Designer = () => {
 	const [size, setSize] = React.useState("full");
 	return (
 		<>
-			<Button
-				className="btn"
-				onClick={onOpen}
-				aria-label="Options"
-				w={75}
-				h={75}
-			>
-				<a className="link">
-					DESIGN
-				</a>
+			<Button className="btn" onClick={onOpen} aria-label="Options">
+				<a className="link">DESIGN</a>
 			</Button>
 			<Drawer
 				placement={placement}
@@ -48,10 +43,14 @@ const Designer = () => {
 				<DrawerOverlay />
 				<DrawerContent>
 					<DrawerBody className="drawer drawer-body designer">
-						<h2>DESIGNER</h2>
-						<main className="drawer-main">
+                {/* <Box backgroundImage={DNDY} /> */}
+						<header>
+							<h2 className="menu folio-head">DESIGNER</h2>
+							<MenuDeck />
+						</header>
+						{/* <main className="drawer-main"> */}
 							{/* Accordion Menu */}
-						</main>
+						{/* </main> */}
 					</DrawerBody>
 				</DrawerContent>
 			</Drawer>

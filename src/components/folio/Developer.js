@@ -21,6 +21,8 @@ import {
 	CloseButton,
 	Box,
 } from "@chakra-ui/react";
+import { CloseIcon } from "@chakra-ui/icons";
+import MenuDeck from "../../components/menu/MenuDeck";
 
 const Developer = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
@@ -28,21 +30,26 @@ const Developer = () => {
 	const [size, setSize] = React.useState("full");
 	return (
 		<>
-			<Button>
-				<a className="link" href="/">
-					DEVELOPER
-				</a>
+			<Button
+				className="btn"
+				onClick={onOpen}
+				aria-label="Options"
+			>
+            <a className="link">DEVELOP</a>
 			</Button>
 			<Drawer
-			// placement={placement}
-			// onClose={onClose}
-			// isOpen={isOpen}
-			// size={size}
+				placement={placement}
+				onClose={onClose}
+				isOpen={isOpen}
+				size={size}
 			>
 				<DrawerOverlay />
 				<DrawerContent>
-					<DrawerBody className="drawer drawer-body">
-						{/* Developer Content Goes Here... */}
+					<DrawerBody className="drawer drawer-body developer">
+						<header>
+							<h2 className="folio-head">DEVELOPER</h2>
+                            <MenuDeck />
+						</header>
 						<main className="drawer-main">
 							{/* Accordion Menu */}
 						</main>

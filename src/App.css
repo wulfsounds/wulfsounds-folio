@@ -55,7 +55,7 @@ section {
     font-style: normal !important;
     font-size: 110px !important;
     line-height: 125px !important;
-    margin: 10px 0 0 10px !important;
+    margin: 25px 0 0 25px !important;
     color: #000000;
 }
 
@@ -100,6 +100,10 @@ p {
 
 }
 
+.drawer-body {
+    margin: 0px !important;
+}
+
 .menu {
     font-family: 'NeutralFace-Bold', sans-serif !important;
     font-weight: 900 !important;
@@ -124,11 +128,21 @@ p {
     /* border: #000000 solid 3px; */
 }
 
+.home-link {
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 8px;
+}
+
+.home-link:hover {
+    background: var(--chakra-colors-blackAlpha-50);
+}
+
 .chakra-accordion {
     display: flex !important;
     flex-direction: row;
     justify-content: space-between;
-    width: 50em;
+    width: 65em;
     flex-shrink: 0;
     /* border: red 3px solid; */
 }
@@ -143,7 +157,7 @@ p {
 .menu-links {
     display: flex !important;
     flex-direction: column !important;
-    align-items: flex-start;
+    align-items: flex-start !important;
 }
 
 .css-17mg6aq {
@@ -152,32 +166,43 @@ p {
 
 .menu-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     width: 75em !important;
     margin-top: 100px;
+    /* padding: 25px; */
 }
 
 .folio {
     position: relative;
-    min-width: 185px;
+    min-width: 134px;
+    /* border: red solid 2px; */
+
 }
 
 .menu-item {
+    display: flex !important;
     font-family: 'NeutralFace-Bold', sans-serif !important;
     font-weight: 500 !important;
     font-style: normal !important;
     font-size: 40px !important;
     color: #F2EFE4 !important;
+    /* align-items: center; */
     /* min-width: 250px; */
 }
+
+
 
 /* Buttons */
 
 .btn {
     background-color: transparent !important;
     padding: 0px;
-    margin-right: 25px;
+    /* margin-right: 25px; */
     /* outline: red solid 2px !important; */
+}
+
+.main {
+    /* margin-right: 25px; */
 }
 
 .closeBtn {
@@ -200,15 +225,35 @@ li {
 }
 
 .link {
-    display: block;
-
+    /* display: block; */
     font-family: neue-haas-grotesk-display, sans-serif !important;
     font-weight: 500 !important;
     font-size: 30px;
     color: #F2EFE4 !important;
 }
 
+/* DESIGNER */
+.designer {
+    background-color: #ffffff;
+    background-image: url('./components/images/DNDYlogo.png') !important;
+    
+    border-radius: 25px !important;
+}
 
+.folio-head {
+    font-family: 'NeutralFace-Bold', sans-serif !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    font-size: 110px !important;
+    color: #F2EFE4 !important;
+    mix-blend-mode: exclusion;
+}
+
+/* DEVELOPER */
+.developer {
+    background-color: #ffffff;
+    border-radius: 25px !important;;
+}
 
 /* Footer */
 
