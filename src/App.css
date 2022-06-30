@@ -201,9 +201,9 @@ p {
     /* outline: red solid 2px !important; */
 }
 
-.main {
-    /* margin-right: 25px; */
-}
+/* .main {
+    margin-right: 25px;
+} */
 
 .closeBtn {
     margin-right: 30px;
@@ -234,10 +234,11 @@ li {
 
 /* DESIGNER */
 .designer {
-    background-color: #ffffff;
+    background-color: #000000;
     background-image: url('./components/images/DNDYlogo.png') !important;
-    
-    border-radius: 25px !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
 }
 
 .folio-head {
@@ -249,19 +250,50 @@ li {
     mix-blend-mode: exclusion;
 }
 
+.para {
+    font-size: 18px !important;
+}
+
+.dndy-para {
+    position: absolute;
+    color: #ffffff !important;
+    width: 325px;
+    right: 60em;
+    top: 22em;
+}
+
+.project-links {
+    position: absolute;
+    left: 75em;
+    top: 33em;
+}
+
+.repo-link {
+    font-family: aktiv-grotesk-extended, sans-serif !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    color: #ffffff !important;
+
+    /* position: absolute; */
+}
+
 /* DEVELOPER */
 .developer {
     background-color: #ffffff;
-    border-radius: 25px !important;;
+    border-radius: 25px !important;
 }
 
 /* Footer */
 
 footer {
+    /* color: #F2EFE4; */
     display: flex;
     justify-content: center;
+    /* font-family: ; */
+    /* mix-blend-mode: exclusion; */
 }
 
 .vh {
     min-height: calc(100vh - 200px);
 }
+
