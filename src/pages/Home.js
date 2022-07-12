@@ -1,5 +1,5 @@
 import React from "react";
-import ProfilePic from "../components/images/dev-profile.jpg"
+import ProfilePic from "../components/images/dev-profile.webp"
 
 const Home = () => {
     return (

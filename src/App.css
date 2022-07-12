@@ -233,9 +233,25 @@ li {
 }
 
 /* DESIGNER */
-.designer {
+.dndy {
     background-color: #000000;
     background-image: url('./components/images/DNDYlogo.png') !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+
+.daytrip {
+    background-color: #000000;
+    background-image: url('./components/images/daytripper-logo.png') !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+
+.thyme {
+    background-color: #000000;
+    background-image: url('./components/images/thyme.png') !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
     background-size: cover !important;
@@ -254,7 +270,9 @@ li {
     font-size: 18px !important;
 }
 
-.dndy-para {
+.dndy-para,
+.daytrip-para,
+.thyme-para {
     position: absolute;
     color: #ffffff !important;
     width: 325px;
