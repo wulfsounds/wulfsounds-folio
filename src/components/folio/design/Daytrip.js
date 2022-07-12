@@ -24,6 +24,7 @@ import {
 import MenuDeck from "../../menu/MenuDeck";
 import DaytripLogo from "../../images/daytripper-logo.png";
 import Footer from "../../Footer";
+import { ArrowRightIcon, ArrowLeftIcon } from "@chakra-ui/icons";
 
 const Daytrip = () => {
 	return (
@@ -36,15 +37,32 @@ const Daytrip = () => {
 						<MenuDeck />
 					</header>
 					<main className="drawer-main">
+						<div className="btnContainer">
+							{/* Button Control */}
+							<IconButton
+								as="ctrlBtns"
+								variant="outline"
+								colorScheme="black"
+								aria-label="Next"
+								icon={<ArrowLeftIcon />}
+							/>
+							<IconButton
+								as="ctrlBtns"
+								variant="outline"
+								colorScheme="black"
+								aria-label="Next"
+								icon={<ArrowRightIcon />}
+							/>
+						</div>
 						<p className="para daytrip-para">
 							Daytripper is a single-day scheduler that stores
 							inputed save data locally. It’s design and name is
 							inspired by the Beatles tune when the world started
 							to live in color.
-                            <br></br> 
-                            <br></br> 
-                            Created using Semantic HTML, CSS,
-							Moment.js and jQuery.
+							<br></br>
+							<br></br>
+							Created using Semantic HTML, CSS, Moment.js and
+							jQuery.
 						</p>
 						<section className="project-links">
 							<h2 className="repo-link">GITHUB</h2>

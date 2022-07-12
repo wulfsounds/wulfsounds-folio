@@ -235,7 +235,7 @@ li {
 .btnContainer {
     position: absolute;
     left: 2em;
-    bottom: 20.5em;
+    bottom: 2.5em;
     /* border: red solid 3px; */
 
 }
@@ -327,4 +327,3 @@ footer {
 .vh {
     min-height: calc(100vh - 200px);
 }
-
