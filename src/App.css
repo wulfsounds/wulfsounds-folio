@@ -232,6 +232,19 @@ li {
     color: #F2EFE4 !important;
 }
 
+.btnContainer {
+    position: absolute;
+    left: 2em;
+    bottom: 20.5em;
+    /* border: red solid 3px; */
+
+}
+
+/* .ctrlBtns {
+    mix-blend-mode: exclusion !important;
+    color: #F2EFE4 !important;
+} */
+
 /* DESIGNER */
 .dndy {
     background-color: #000000;

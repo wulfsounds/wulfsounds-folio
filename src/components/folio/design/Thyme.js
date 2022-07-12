@@ -25,6 +25,9 @@ import MenuDeck from "../../menu/MenuDeck";
 import DaytripLogo from "../../images/daytripper-logo.png";
 import Footer from "../../Footer";
 
+// Button Control Eco
+import { ArrowRightIcon, ArrowLeftIcon } from "@chakra-ui/icons";
+
 const Thyme = () => {
 	return (
 		<>
@@ -36,6 +39,23 @@ const Thyme = () => {
 						<MenuDeck />
 					</header>
 					<main className="drawer-main">
+						<div className="btnContainer">
+						{/* Button Control */}
+						<IconButton
+							as="ctrlBtns"
+							variant="outline"
+							colorScheme="black"
+							aria-label="Next"
+							icon={<ArrowLeftIcon />}
+						/>
+						<IconButton
+						as="ctrlBtns"
+							variant="outline"
+							colorScheme="black"
+							aria-label="Next"
+							icon={<ArrowRightIcon />}
+						/>
+						</div>
 						<p className="para thyme-para">
 							Thyme is a conceptual note-taking application
 							designed with an incredible all-female cast with the
