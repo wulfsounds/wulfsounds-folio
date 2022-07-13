@@ -44,7 +44,7 @@ const Designer = () => {
 				size={size}
 			>
 				<DrawerOverlay />
-				<Thyme />
+				<DNDY />
 			</Drawer>
 		</>
 	);
