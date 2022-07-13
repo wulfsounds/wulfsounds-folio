@@ -22,10 +22,11 @@ import {
 	Box,
 } from "@chakra-ui/react";
 import MenuDeck from "../../menu/MenuDeck";
-import DesignEco from "../engine/DesignEco";
 import DndyLogo from "../../images/DNDYlogo.png";
 import Footer from "../../Footer";
 import { ArrowRightIcon, ArrowLeftIcon } from "@chakra-ui/icons";
+import ThymeLeft from "../engine/ThymeCtrl/ThymeLeft";
+import DayRight from "../engine/DayCtrl/DayRight";
 
 
 const DNDY = () => {
@@ -41,7 +42,8 @@ const DNDY = () => {
 					<main className="drawer-main">
 						<div className="btnContainer">
 							{/* Button Control */}
-							<DesignEco />
+							<ThymeLeft />
+							<DayRight />
 						</div>
 						<p className="para dndy-para">
 							DNDY is a project I operated as a front-end designer

@@ -25,9 +25,9 @@ import {
 	Flex,
 } from "@chakra-ui/react";
 import { ArrowRightIcon, ArrowLeftIcon } from "@chakra-ui/icons";
-import DNDY from "../design/DNDY";
-import Thyme from "../design/Thyme";
-import Daytrip from "../design/Daytrip";
+import DNDY from "../../design/DNDY";
+import Thyme from "../../design/Thyme";
+import Daytrip from "../../design/Daytrip";
 
 const DesignEco = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();

@@ -27,7 +27,8 @@ import Footer from "../../Footer";
 
 // Button Control Eco
 import { ArrowRightIcon, ArrowLeftIcon } from "@chakra-ui/icons";
-import DesignEco from "../engine/DesignEco";
+import DNDYRight from "../engine/DNDYCtrl/DndyRight";
+import DayLeft from "../engine/DayCtrl/DayLeft";
 import DNDY from "./DNDY";
 
 const Thyme = () => {
@@ -42,7 +43,8 @@ const Thyme = () => {
 					</header>
 					<main className="drawer-main">
 						<div className="btnContainer">
-							<DesignEco />
+							<DayLeft />
+							<DNDYRight />
 						</div>
 						<p className="para thyme-para">
 							Thyme is a conceptual note-taking application

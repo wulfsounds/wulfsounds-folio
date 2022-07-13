@@ -1,4 +1,6 @@
-import React, { useContext, Link } from "react";
+// Button Ecosystem for the Designer Folio
+
+import React from "react";
 import {
 	Accordion,
 	AccordionItem,
@@ -20,23 +22,26 @@ import {
 	IconButton,
 	CloseButton,
 	Box,
+	Flex,
 } from "@chakra-ui/react";
-import MenuDeck from "../../components/menu/MenuDeck";
-// import DesignEco from "./engine/DndyRight";
-import DNDY from "./design/DNDY";
-import Daytrip from "./design/Daytrip";
-import Thyme from "./design/Thyme";
-import Footer from "../Footer";
+import { ArrowRightIcon, ArrowLeftIcon } from "@chakra-ui/icons";
+import Thyme from "../../design/Thyme";
 
-const Designer = () => {
+const ThymeRight = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
-	const [placement, setPlacement] = React.useState("bottom");
+	const [placement, setPlacement] = React.useState("right");
 	const [size, setSize] = React.useState("full");
+
 	return (
 		<>
-			<Button className="btn" onClick={onOpen} aria-label="Options">
-				<a className="link">DESIGN</a>
-			</Button>
+			<IconButton
+				onClick={onOpen}
+				as="ctrlBtns"
+				variant="outline"
+				colorScheme="black"
+				aria-label="Next"
+				icon={<ArrowRightIcon />}
+			/>
 			<Drawer
 				placement={placement}
 				onClose={onClose}
@@ -50,4 +55,4 @@ const Designer = () => {
 	);
 };
 
-export default Designer;
+export default ThymeRight;

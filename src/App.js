@@ -2,6 +2,7 @@
 import React from "react";
 // import {AnimatePresence, motion} from framer-motion/dist/framer-motion;
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {RemoveScrollBar} from 'react-remove-scroll-bar'
 import "./App.css";
 
 // Import Components
@@ -18,6 +19,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 function App() {
 	return (
 		<ChakraProvider>
+		<RemoveScrollBar />
 			<div className="App">
 				<Router>
 					<Header />

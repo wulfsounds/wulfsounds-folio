@@ -25,6 +25,8 @@ import MenuDeck from "../../menu/MenuDeck";
 import DaytripLogo from "../../images/daytripper-logo.png";
 import Footer from "../../Footer";
 import { ArrowRightIcon, ArrowLeftIcon } from "@chakra-ui/icons";
+import DNDYLeft from "../engine/DNDYCtrl/DndyLeft";
+import ThymeRight from "../engine/ThymeCtrl/ThymeRight";
 
 const Daytrip = () => {
 	return (
@@ -39,20 +41,8 @@ const Daytrip = () => {
 					<main className="drawer-main">
 						<div className="btnContainer">
 							{/* Button Control */}
-							<IconButton
-								as="ctrlBtns"
-								variant="outline"
-								colorScheme="black"
-								aria-label="Next"
-								icon={<ArrowLeftIcon />}
-							/>
-							<IconButton
-								as="ctrlBtns"
-								variant="outline"
-								colorScheme="black"
-								aria-label="Next"
-								icon={<ArrowRightIcon />}
-							/>
+							<DNDYLeft />
+							<ThymeRight />
 						</div>
 						<p className="para daytrip-para">
 							Daytripper is a single-day scheduler that stores
