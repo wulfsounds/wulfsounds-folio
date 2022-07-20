@@ -1,4 +1,6 @@
-import React, { useContext, Link } from "react";
+// Button Ecosystem for the Designer Folio
+
+import React from "react";
 import {
 	Accordion,
 	AccordionItem,
@@ -20,24 +22,26 @@ import {
 	IconButton,
 	CloseButton,
 	Box,
+	Flex,
 } from "@chakra-ui/react";
-import { CloseIcon } from "@chakra-ui/icons";
-import MenuDeck from "../../components/menu/MenuDeck";
-import EmpTrk from "./develop/EmpTrk";
+import { ArrowRightIcon, ArrowLeftIcon } from "@chakra-ui/icons";
+import EmpTrk from "../../develop/EmpTrk";
 
-const Developer = () => {
+const DayLeft = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
-	const [placement, setPlacement] = React.useState("bottom");
+	const [placement, setPlacement] = React.useState("left");
 	const [size, setSize] = React.useState("full");
+
 	return (
 		<>
-			<Button
-				className="btn"
+			<IconButton
 				onClick={onOpen}
-				aria-label="Options"
-			>
-            <a className="link">DEVELOP</a>
-			</Button>
+				as="ctrlBtns"
+				variant="outline"
+				colorScheme="black"
+				aria-label="Back"
+				icon={<ArrowLeftIcon />}
+			/>
 			<Drawer
 				placement={placement}
 				onClose={onClose}
@@ -51,4 +55,4 @@ const Developer = () => {
 	);
 };
 
-export default Developer;
+export default DayLeft;

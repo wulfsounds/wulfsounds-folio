@@ -240,11 +240,6 @@ li {
 
 }
 
-/* .ctrlBtns {
-    mix-blend-mode: exclusion !important;
-    color: #F2EFE4 !important;
-} */
-
 /* DESIGNER */
 .dndy {
     background-color: #000000;
@@ -255,7 +250,7 @@ li {
 }
 
 .daytrip {
-    background-color: #000000;
+    background-color: #25ABC5;
     background-image: url('./components/images/daytripper-logo.png') !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
@@ -263,12 +258,40 @@ li {
 }
 
 .thyme {
-    background-color: #000000;
+    background-color: #243119;
     background-image: url('./components/images/thyme.png') !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
     background-size: cover !important;
 }
+
+/* DEVELOPER */
+
+.emptrk {
+    background-color: #C73D8D;
+    background-image: url('./components/images/emp-trk2.png') !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+
+.jate {
+    background-color: #49ADFA;
+    background-image: url('./components/images/JATE-2.png') !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+
+.readme {
+    background-color: #7AB75B;
+    background-image: url('./components/images/README-2.png') !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+
+
 
 .folio-head {
     font-family: 'NeutralFace-Bold', sans-serif !important;
@@ -285,7 +308,10 @@ li {
 
 .dndy-para,
 .daytrip-para,
-.thyme-para {
+.thyme-para,
+.emptrk-para,
+.jate-para,
+.readme-para {
     position: absolute;
     color: #ffffff !important;
     width: 325px;
